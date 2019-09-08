@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Aux from "../../hoc/Aux";
+import Wrap from "../../hoc/Wrap/Wrap";
 import Burger from "../../components/Burger";
 import BuildControls from "../../components/Burger/BuildControls";
 import Modal from "../../components/UI/Modal";
@@ -92,7 +92,7 @@ class BurgerBuilder extends Component {
       disableInfo[key] = disableInfo[key] <= 0;
     }
     return (
-      <Aux>
+      <Wrap>
         <Modal
           show={this.state.purchasing}
           modalClosed={this.purchaseCancelHandler}
@@ -113,7 +113,7 @@ class BurgerBuilder extends Component {
           price={this.state.totalPrice}
           ordered={this.purchaseHandler}
         />
-      </Aux>
+      </Wrap>
     );
   }
 }

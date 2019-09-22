@@ -20,7 +20,7 @@ const Burger = ({ ingredients }) => {
   // bread-top and bread-bottom ingredient are always available
   return (
     <div className={classes.Burger}>
-      {console.log(transformedIngredients)}
+      {/* {console.log(transformedIngredients)} */}
       <BurgerIngredients type="bread-top" />
       {transformedIngredients}
       <BurgerIngredients type="bread-bottom" />
